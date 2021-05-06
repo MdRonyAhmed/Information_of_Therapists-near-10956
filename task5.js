@@ -112,8 +112,8 @@ Urls = "https://www.psychologytoday.com/us/therapists/10956?zipdist=2&fbclid=IwA
     }
 
     console.log(list);
-    // const csv = j2cp.parse(list);
-    // fs.appendFileSync("./Info.csv", csv, "utf-8");
+    const csv = j2cp.parse(list);
+    fs.appendFileSync("./Info.csv", csv, "utf-8");
 
     browser.close();
 
